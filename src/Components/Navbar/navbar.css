@@ -1,0 +1,66 @@
+.navbarComponent-container{
+    height: 60px;
+    /* border-bottom:1px solid lightgray ; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+.navbarComponent-container .logo-image-container{
+ width: 90px;
+ height: 40px;
+ cursor: pointer;
+}
+.navbarComponent-wrapper{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    /* position: relative;
+    left: 250px; */
+    margin-left: 260px;
+    padding: 0 10px;
+}
+.navComponent-icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar-icon{
+    display: none;
+}
+.navbarComponent-container .Logo-container{
+    display: none;
+}
+.navbarComponent-container .navbar-user-information-container{
+    display: flex;
+    justify-content: right;
+}
+@media screen and (max-width: 1000px) {
+    .navbarComponent-wrapper{
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-icon{
+        display: block;
+    }
+    .navbar-hamburger-icon{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .navbarComponent-container .Logo-container{
+        display: block;
+    }
+    .navbarComponent-wrapper .sidebar-user-information-container{
+        display: none;
+    }
+}
+.welcome-note{
+    color: var(--primary-color);
+}

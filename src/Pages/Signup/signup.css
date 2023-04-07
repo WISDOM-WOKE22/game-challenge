@@ -1,0 +1,126 @@
+.auth-container{
+    display: flex;
+    justify-content: center;
+}
+.auth-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+}
+.image-container{
+    background-color: var(--primary-color);
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.auth-form{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.auth-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(77, 76, 76);
+}
+.auth-form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    text-indent: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+.auth-form input:focus{
+    border-color:var(--primary-color) ;
+}
+.mini-form-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.mini-form-section input{
+    width: 240px;
+}
+.form-button{
+    display: flex;
+    width: 100%;
+}
+.form-button button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.line{
+    margin: 20px 0;
+    color: rgb(226, 218, 218);
+    background-color: rgb(226, 218, 218);
+}
+.form-button .google{
+    background-color: rgb(236, 38, 38);
+}
+.facebook-btn-container{
+    margin-top: 20px;
+}
+.facebook-btn-container .facebook{
+    background-color: #0052FF;
+}
+.auth-icon{
+    font-size: 16px;
+}
+.google-icon{
+    position: relative;
+    top: 3px;
+}
+.auth-text{
+    text-align: center;
+    margin-top: 5px;
+}
+@media screen and (max-width:1000px) {
+    .image-container{
+        display: none;
+    }
+    .form-container{
+        padding: 20px;
+    }
+    .auth-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:600px) {
+    .form-container{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:520px) {
+    .mini-form-section{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin:10px 0;
+    }
+    .mini-form-section input{
+        width: 100%;
+        margin: 10px 0 ;
+    }
+}
+.login-page label{
+    margin: 12px 0;
+}
+.password-reset-page p{
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+}
+.password-reset-page label{
+    margin-bottom: 30px;
+}

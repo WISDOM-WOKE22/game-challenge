@@ -1,3 +1,19 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=New+Rocker&family=Nunito+Sans:wght@300&family=Roboto&family=Sansita&family=Sansita+Swashed&display=swap');
+:root{
+  --primary-color: rgb(243, 102, 8);
+  --primary-background-color: #fff;
+  --primary-font: Sansita;
+}
+*{
+  font-family: var(--primary-font);
+  padding: 0;
+  margin: 0;
+}
+button{
+  cursor: pointer;
+}
+.error{
+  color: red;
+  text-align: left;
+  font-size: 14px;
 }
